@@ -1,0 +1,61 @@
+{
+  "name": "outcome-dev-web-ui",
+  "description": "User interface for outcome.dev",
+  "private": true,
+  "dependencies": {
+    "@babel/core": "^7.5.0",
+    "@babel/plugin-syntax-dynamic-import": "^7.2.0",
+    "@emotion/core": "^10.0.21",
+    "@emotion/styled": "^10.0.17",
+    "@hot-loader/react-dom": "^16.8.6",
+    "@material-ui/core": "^4.1.3",
+    "@remirror/core": "^0.6.3",
+    "@remirror/dev": "^0.6.3",
+    "@remirror/extension-drop-cursor": "^0.6.3",
+    "@remirror/react": "^0.6.3",
+    "@types/react": "^16.8.22",
+    "@types/react-dom": "^16.8.4",
+    "@typescript-eslint/parser": "^2.2.0",
+    "awesome-typescript-loader": "^5.2.1",
+    "babel-loader": "^8.0.6",
+    "babel-plugin-transform-react-stateless-component-name": "^1.1.2",
+    "circular-dependency-plugin": "^5.2.0",
+    "copy-webpack-plugin": "^5.0.4",
+    "css-loader": "^3.2.0",
+    "emotion": "^10.0.14",
+    "eslint": "^5.16.0",
+    "eslint-plugin-react-hooks": "^1.6.1",
+    "html-webpack-plugin": "^3.2.0",
+    "react": "^16.9.0",
+    "react-docgen-typescript-loader": "^3.3.0",
+    "react-dom": "^16.8.6",
+    "react-hot-loader": "^4.12.15",
+    "style-loader": "^1.0.0",
+    "ts-jest": "^24.0.2",
+    "ts-loader": "^6.2.1",
+    "tsconfig-paths-webpack-plugin": "^3.2.0",
+    "typescript": "3.6.2",
+    "webpack": "^4.41.2",
+    "webpack-cli": "^3.3.5",
+    "webpack-dev-server": "^3.7.2"
+  },
+  "scripts": {
+    "lint": "eslint --ext js,jsx,ts,tsx src",
+    "start": "NODE_ENV=development webpack-dev-server --history-api-fallback --hot --client-log-level warning --host 127.0.0.1 --port 3000",
+    "storybook": "start-storybook -p 6006",
+    "test-watch": "jest --watchAll",
+    "typecheck": "tsc"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
+}

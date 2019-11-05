@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="license" href="/software-credits" />
+    <meta name="msapplication-TileColor" content="#ffffff" />
+    <meta name="theme-color" content="#ffffff" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600,700&display=swap"
+      rel="stylesheet"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#000000" />
+    <title>Outcome.dev</title>
+  </head>
+  <body>
+    <% if (process.env.NODE_ENV !== 'xdevelopment') { %>
+    <script
+      src="https://browser.sentry-cdn.com/5.6.1/bundle.min.js"
+      integrity="sha384-pGTFmbQfua2KiaV2+ZLlfowPdd5VMT2xU4zCBcuJr7TVQozMO+I1FmPuVHY3u8KB"
+      crossorigin="anonymous"
+    ></script>
+    <% } %>
+    <noscript>
+      <p>Our apologies.</p>
+      <p>
+        This application does not work without JavaScript.
+      </p>
+    </noscript>
+    <div id="root"></div>
+  </body>
+</html>
