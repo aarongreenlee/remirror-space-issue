@@ -1,6 +1,6 @@
 # remirror-space-issue
 
-A repository created to aid in filing https://github.com/ifiokjr/remirror/issues/170.
+A repository created to aid in filing [Remirror Issue 170](https://github.com/ifiokjr/remirror/issues/170) which is Solved.
 
 ## Editor Assembly in This Repo
 
